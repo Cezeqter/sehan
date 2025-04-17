@@ -266,3 +266,14 @@ footer {
     color: #3498db;
     transition: color 0.3s ease;
   }
+
+.bubble.left {
+  background-color: #e5e5ea;
+  color: #000;
+  border: 1px solid #ccc;
+}
+
+.bubble.right {
+  background-color: #007aff;
+  color: #fff;
+}
