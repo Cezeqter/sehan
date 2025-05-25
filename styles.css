@@ -1,279 +1,164 @@
-/* Reset some default styling */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* General body styling */
-body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
-}
-
-/* Container for layout alignment */
-.container {
-    width: 80%;
-    margin: 0 auto;
-}
-
-/* Header and navigation */
-header {
-    background: #333;
-    color: white;
-    padding: 20px 0;
-}
-
-nav ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-}
-
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    padding: 5px 10px;
-}
-
-nav ul li a:hover {
-    background-color: #555;
-    border-radius: 5px;
-} 
-
-/* Profil Foto */
-.profile-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    background-color: #fff;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    animation: fadeIn 2s ease-in-out;
-  }
-  
-  .profile-photo {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 50%;
-    animation: zoomIn 1.5s ease-out;
-  }
-  
-  /* Animasi Fade-In */
-  @keyframes fadeIn {
-    0% {
-      opacity: 0;
-      transform: translateY(20px);
+ body {
+      font-family: Arial, sans-serif;
+      color: #f5f5f5;
+      background: linear-gradient(120deg, maroon, black, brown);
+      margin: 0;
+      padding: 0;
     }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
+
+    .header {
+      text-align: center;
+      padding: 20px;
+      background: linear-gradient(90deg, #400d12, #2d070b);
     }
-  }
-  
-  /* Animasi Zoom-In */
-  @keyframes zoomIn {
-    0% {
-      transform: scale(0.8);
-      opacity: 0;
+
+    .navbar {
+      background-color: #800000;
+      overflow: hidden;
     }
-    100% {
-      transform: scale(1);
-      opacity: 1;
+
+    .navbar a {
+      float: left;
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
     }
-  }
-  
 
-/* Intro Section */
-.intro {
-    background-color: #4CAF50;
-    color: white;
-    text-align: center;
-    padding: 100px 0;
-}
-
-.intro h1 {
-    font-size: 3em;
-}
-
-.intro .highlight {
-    color: #FFD700;
-}
-
-/* Section Styling */
-.section {
-    padding: 60px 0;
-    text-align: center;
-}
-
-/* Skills Section */
-.skills-list {
-    list-style: none;
-    padding: 0;
-}
-
-.skills-list li {
-    font-size: 1.2em;
-    margin: 10px 0;
-}
-
-/* Experience Section */
-.experience-list {
-    list-style: none;
-    padding: 0;
-}
-
-.experience-list li {
-    margin-bottom: 20px;
-}
-
-.experience-list h3 {
-    font-size: 1.5em;
-    color: #333;
-}
-
-/* Form Section */
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-form input, form textarea {
-    width: 100%;
-    max-width: 500px;
-    margin: 10px 0;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-form button {
-    width: 100%;
-    max-width: 500px;
-    padding: 10px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-form button:hover {
-    background-color: #45a049;
-}
-
-/* Footer */
-footer {
-    background-color: #333;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-}
-
-/* Reset Margin dan Padding */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  /* Menyeting Body */
-  body {
-    font-family: 'Roboto', sans-serif; /* Font utama */
-    background-color: #f4f4f4;
-    color: #333;
-    line-height: 1.6;
-  }
-  
-  /* Pengaturan Container untuk Profil */
-  .profile-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    background-color: #fff;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    animation: fadeIn 2s ease-in-out;
-  }
-  
-  /* Profil Foto */
-  .profile-photo {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 50%;
-    animation: zoomIn 1.5s ease-out;
-  }
-  
-  /* Pengaturan Heading (h1) */
-  h1 {
-    font-family: 'Lora', serif; /* Font elegan untuk heading */
-    font-size: 2.5em;
-    font-weight: 700;
-    color: #2c3e50;
-    margin-top: 20px;
-  }
-  
-  /* Pengaturan Teks Paragraf (p) */
-  p {
-    font-family: 'Roboto', sans-serif; /* Font profesional untuk teks */
-    font-size: 1.2em;
-    font-weight: 400;
-    color: #555;
-  }
-  
-  /* Animasi Zoom-In */
-  @keyframes zoomIn {
-    0% {
-      transform: scale(0.8);
-      opacity: 0;
+    .navbar a:hover {
+      background-color: #ddd;
+      color: black;
     }
-    100% {
-      transform: scale(1);
-      opacity: 1;
-    }
-  }
-  
-  /* Animasi Fade-In */
-  @keyframes fadeIn {
-    0% {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
-  /* Efek Hover pada Heading */
-  h1:hover {
-    color: #3498db;
-    transition: color 0.3s ease;
-  }
 
-.bubble.left {
-  background-color: #e5e5ea;
-  color: #000;
-  border: 1px solid #ccc;
-}
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
 
-.bubble.right {
-  background-color: #007aff;
-  color: #fff;
-}
+    .dropdown .dropbtn {
+      background-color: #800000;
+      color: white;
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    .dropdown:hover .dropbtn {
+      background-color: #ddd;
+      color: black;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #ffcc00;
+      min-width: 160px;
+      z-index: 1;
+      top: 100%;
+      left: 0;
+    }
+
+    .dropdown-content a {
+      color: white;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .description {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .text {
+      flex: 1 1 60%;
+      padding: 20px;
+      background: #000;
+      color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .text h2 {
+      margin-bottom: 10px;
+      font-size: 1.8rem;
+      color: #ffcc00;
+    }
+
+    .image {
+      flex: 1 1 30%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px;
+    }
+
+    .image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 15px;
+      object-fit: cover;
+    }
+
+    .comments {
+      margin: 40px 20px;
+      background: #2d070b;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    textarea {
+      width: 100%;
+      height: 100px;
+      margin-bottom: 10px;
+      border: none;
+      border-radius: 5px;
+      padding: 10px;
+    }
+
+    button {
+      background-color: #ffcc00;
+      color: black;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #ffa500;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 20px;
+      background: #400d12;
+    }
+
+    .footer img {
+      width: 50px;
+      cursor: pointer;
+    }
+
+    a {
+      color: #ffcc00;
+    }
+  </style>
+</head>
+<body>
