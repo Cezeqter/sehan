@@ -6,86 +6,136 @@
     <title>Nurul Amni Fairuz</title>
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#about">Tentang Saya</a></li>
-                <li><a href="#skills">Keahlian</a></li>
-                <li><a href="#experience">Pengalaman</a></li>
-                <li><a href="#contact">Kontak</a></li>
-            </ul>
-        </nav>
-    </header>
+    
+  <!-- Navbar -->
+  <header id="navbar">
+    <div class="navbar">
+      <a href="#tentang1">Pendidikan</a>
+      <a href="#tentang2">Pengalaman</a>
+      <a href="#tentang3">Sertifikat</a>
+      <a href="#tentang4">Proyek</a>
+      <a href="#tentang5">Keterampilan</a>
+      <a href="#tentang6">Kontak</a>
+    </div>
+  </header>
 
-    <body>
-        <div class="profile-container">
-          <img src="William.jpg" alt="Profil Foto" class="profile-photo">
-        </div>
-    <section class="intro">
-        <div class="container">
-            <h1>Halo, saya <span class="highlight">Nurul Amni Fairuz</span></h1>
-            <p>Siswa SMK Teknik Komputer dan Jaringan (TKJ) dengan minat besar di bidang jaringan dan teknologi informasi. Saya berencana mengembangkan karir di Jepang untuk terus mengasah keterampilan dan menghadapi tantangan baru. Dengan pengalaman dan semangat belajar yang saya miliki, saya siap memberikan kontribusi di industri teknologi Jepang.
-                <br>
-                <br>
-                Berikut adalah sedikit informasi tentang saya.</p>
-        </div>
+  <!-- Header -->
+  <header class="header">
+    <div style="display: flex; align-items: center; flex-wrap: wrap; justify-content: center;">
+      <div style="flex: 1; min-width: 150px; max-width: 200px; padding: 10px;">
+        <img src="foto.jpg" alt="Foto Profil" style="width: 100%; border-radius: 50%; border: 3px solid #ffcc00; box-shadow: 0 0 10px rgba(0,0,0,0.5);">
+      </div>
+      <div style="flex: 3; min-width: 250px; color: white; padding: 10px;">
+        <h1>Nurul Amni Fairuz</h1>
+        <p>Web Developer | UI/UX Enthusiast | Tech Learner</p>
+        <p>Siswa SMK Teknik Komputer dan Jaringan (TKJ) dengan minat besar di bidang jaringan dan teknologi informasi. Saya berencana mengembangkan karir di Jepang untuk terus mengasah keterampilan dan menghadapi tantangan baru. Dengan pengalaman dan semangat belajar yang saya miliki, saya siap memberikan kontribusi di industri teknologi Jepang.</p>
+      </div>
+    </div>
+  </header>
+  
+    <p>Saya adalah siswa TKJ SMKN 1 Wonosobo yang memiliki passion di bidang jaringan komputer dan sistem informasi. Saya terbiasa bekerja secara tim dan selalu siap mengasah kemampuan melalui pembelajaran teknologi terkini.</p>
+  </header>
+
+  <!-- Dropdown Menu -->
+  <section id="tentang" style="text-align: center;">
+    <div class="dropdown">
+      <button class="dropbtn">Navigasi CV</button>
+      <div class="dropdown-content">
+        <a href="#tentang1">Pendidikan</a>
+        <a href="#tentang2">Pengalaman Kerja</a>
+        <a href="#tentang3">Sertifikat</a>
+        <a href="#tentang4">Proyek</a>
+        <a href="#tentang5">Keterampilan</a>
+        <a href="#tentang6">Kontak</a>
+      </div>
+    </div>
+  </section>
+
+  <main class="content">
+    <!-- Pendidikan -->
+    <section class="description" id="tentang1">
+      <div class="text">
+        <h2>Pendidikan</h2>
+        <p>Saya adalah siswa di SMKN 1 Wonosobo, jurusan Teknik Komputer dan Jaringan (TKJ). Saya belajar tentang jaringan komputer, pemrograman dasar, instalasi perangkat, troubleshooting, serta sistem operasi.</p>
+      </div>
+      <div class="image">
+        <img src="sekolah.png" alt="Pendidikan">
+      </div>
     </section>
-    </body>
-
-    <section id="about" class="section">
-        <div class="container">
-            <h2>Tentang Saya</h2>
-            <p>Saya adalah siswa di SMKN 1 Wonosobo, saat ini sedang menempuh pendidikan di jurusan Teknik Komputer dan Jaringan (TKJ). Dalam pendidikan ini, saya mempelajari berbagai keterampilan, seperti instalasi dan pemeliharaan jaringan komputer, pemrograman, serta troubleshooting perangkat keras dan perangkat lunak.
-                <br>
-                <br>
-                Selain itu, saya juga memiliki pengalaman praktikum yang melibatkan pengelolaan dan perancangan jaringan di sekolah. Passion saya terletak pada dunia teknologi, terutama dalam bidang jaringan dan sistem informasi. Saya sangat tertarik untuk mengembangkan karir di bidang ini dan berambisi untuk bekerja di Jepang, negara yang saya kagumi karena kemajuan teknologinya dan lingkungan kerjanya yang dinamis. Saya siap untuk terus mengasah keterampilan dan menghadapi tantangan baru dalam dunia teknologi.</p>
-        </div>
+  
+    <!-- Pengalaman -->
+    <section class="description" id="tentang2">
+      <div class="text">
+        <h2>Pengalaman</h2>
+        <p>Saya telah mengikuti praktikum langsung di sekolah yang melibatkan pengelolaan dan perancangan jaringan. Selain itu, saya aktif dalam kegiatan proyek internal sekolah untuk mengasah kemampuan teknis dan manajemen waktu.</p>
+      </div>
     </section>
-
-    <section id="skills" class="section">
-        <div class="container">
-            <h2>Keahlian</h2>
-            <ul class="skills-list">
-                <li>Saya memiliki pengalaman dalam atletik, di mana saya telah dilatih untuk bertahan dalam kondisi fisik dan mental yang penuh tantangan. Keahlian ini mengajarkan saya untuk tetap fokus dan berusaha maksimal meskipun menghadapi kesulitan. Ketahanan mental saya terbentuk melalui latihan yang keras, sementara komunikasi yang efektif dengan rekan tim dan pelatih memungkinkan saya untuk terus berkembang dan meningkatkan performa.
-                    <br>
-                    <br>
-                    Keterampilan ini sangat relevan dengan bidang Teknik Komputer dan Jaringan (TKJ), di mana pemecahan masalah yang kompleks dan ketekunan dalam menyelesaikan tugas-tugas teknis yang menantang adalah hal yang biasa. Pengalaman dalam atletik juga mengasah kemampuan saya untuk bekerja dengan tim secara efektif, yang penting dalam proyek-proyek teknis yang membutuhkan kolaborasi.</li>
-            </ul>
+  
+    <!-- Sertifikat -->
+    <section class="description"id="tentang3">
+        <div class="text">
+          <h2>Sertifikat</h2>
+          <p>Saya belum memiliki sertifikat resmi saat ini, namun saya aktif mengikuti pelatihan mandiri tentang topologi jaringan dan simulasi konfigurasi jaringan menggunakan Cisco Packet Tracer. Saya juga sering belajar melalui platform seperti Dicoding dan YouTube untuk memperdalam pemahaman tentang jaringan komputer.</p>
         </div>
+      </section>      
+  
+    <!-- Proyek -->
+    <section class="description" id="tentang4">
+        <div class="text">
+          <h2>Proyek</h2>
+          <p>Saya telah merancang dan membuat beberapa skema topologi jaringan skala kecil hingga menengah sebagai latihan, baik dalam bentuk fisik maupun simulasi digital. Salah satu proyek saya adalah mendesain jaringan komputer untuk ruang laboratorium menggunakan konsep topologi star dan hybrid, yang kemudian saya simulasikan menggunakan Cisco Packet Tracer untuk menguji konektivitas antar perangkat.</p>
+        </div>
+        <div class="image">
+            <img src="lab.png" alt="Proyek">
+          </div>
+      </section>      
+  
+    <!-- Keterampilan -->
+    <section class="description" id="tentang5">
+        <div class="text">
+          <h2>Keterampilan</h2>
+          <ul>
+            <li>Perancangan dan analisis topologi jaringan</li>
+            <li>Simulasi jaringan dengan Cisco Packet Tracer</li>
+            <li>Dasar pemrograman web (HTML, CSS, JavaScript)</li>
+            <li>Troubleshooting perangkat keras dan jaringan</li>
+            <li>Kolaborasi tim dan komunikasi efektif</li>
+            <li>Ketahanan fisik dan fokus dari pengalaman atletik</li>
+          </ul>
+        </div>
+      </section>      
+  
+    <!-- Kontak -->
+    <section class="description" id="tentang6">
+      <div class="text">
+        <h2>Kontak</h2>
+        <p>Email: <a href="mailto:nurulamnifairuz77@email.com">nurulamnifairuz77@gmail.com</a></p>
+        <p>Instagram: <a href="https://instagram.com/amzegle" target="_blank">@amzegle</a></p>
+      </div>
     </section>
+  </main>
+  
 
-    <section id="experience" class="section">
-        <div class="container">
-            <h2>Pengalaman Kerja</h2>
-            <ul class="experience-list">
-                <li>
-                    <h3>Walaupun saya belum memiliki pengalaman kerja sebelumnya, saya sangat termotivasi untuk belajar dan siap beradaptasi dengan dunia kerja. Saya percaya bahwa dengan kemampuan yang saya miliki dan semangat untuk terus berkembang, saya dapat memberikan kontribusi positif di tempat kerja.</h3>
-                </li>
-            </ul>
-        </div>
-    </section>
+  <!-- Komentar -->
+  <section class="comments">
+    <h2>Tinggalkan Pesan</h2>
+    <form id="comment-form">
+      <textarea id="comment-input" placeholder="Tulis pesan atau saran..."></textarea>
+      <button type="submit">Kirim</button>
+    </form>
+    <div id="comments-display"></div>
+  </section>
 
-    <center><a href="https://www.instagram.com/amzegle?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="target=_blank">Instagram</center><img src="images.jpeg" alt="Instagram"></a>
-
-    <section id="contact" class="section">
-        <div class="container">
-            <h2>Kontak</h2>
-            <form id="contact-form">
-                <input type="text" id="name" placeholder="Nama" required>
-                <input type="email" id="email" placeholder="Email" required>
-                <textarea id="message" placeholder="Pesan" required></textarea>
-                <button type="submit">Kirim</button>
-            </form>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <p>Saya sangat menantikan kerjasama dengan anda sekalian.</p>
-        </div>
-    </footer>
+  <!-- Footer -->
+  <footer class="footer">
+    <p>Follow me on Instagram</p>
+    <a href="https://www.instagram.com/amzegle" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram"/>
+    </a>
+  </footer>
+    
+</body>
+</html>
 
     <script src="script.js"></script>
 </body>
