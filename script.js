@@ -1,14 +1,16 @@
-document.getElementById('contact-form').addEventListener('submit', function(e) {
-    e.preventDefault();
-    
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const message = document.getElementById('message').value;
+<!-- JavaScript -->
+  <script>
+    document.getElementById('comment-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const commentInput = document.getElementById('comment-input');
+      const commentText = commentInput.value.trim();
 
-    if (name && email && message) {
-        alert('Terima kasih! Pesan Anda telah terkirim.');
-        document.getElementById('contact-form').reset();
-    } else {
-        alert('Silakan lengkapi semua field.');
-    }
-});
+      if (commentText !== '') {
+        const commentDisplay = document.getElementById('comments-display');
+        const newComment = document.createElement('p');
+        newComment.textContent = commentText;
+        commentDisplay.appendChild(newComment);
+        commentInput.value = '';
+      }
+    });
+  </script>
